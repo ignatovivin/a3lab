@@ -1,0 +1,291 @@
+.steps {
+  width: 100%;
+  padding: 140px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.steps-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+
+.steps-title-block {
+  width: 100%;
+  text-align: center;
+}
+
+.steps-title {
+  margin: 0;
+  color: var(--light-blue-5);
+}
+
+.steps-title-gradient {
+  background: var(--blue-gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.steps-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.steps-control-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.steps-control-frame {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.steps-control-line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--text-white);
+  min-width: 0;
+}
+
+.steps-control-item:first-child .steps-control-frame .steps-control-line:first-child {
+  visibility: hidden;
+}
+
+.steps-control-item:last-child .steps-control-frame .steps-control-line:last-child {
+  visibility: hidden;
+}
+
+.steps-control-number {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps-control-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--light-blue-100);
+  background-color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.steps-number {
+  color: var(--dark-blue-100);
+  text-align: center;
+}
+
+.steps-control-caption {
+  margin: 0;
+  color: var(--light-blue-5);
+  text-align: center;
+  width: 100%;
+}
+
+.steps-try-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (min-width: 1920px) {
+  .steps {
+    padding: 140px 0;
+  }
+  
+  .steps-container {
+    max-width: 1920px;
+    padding: 0 60px;
+  }
+  
+  .steps-content {
+    gap: 120px;
+  }
+  
+  .steps-control-item {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  .steps {
+    padding: 120px 0;
+  }
+  
+  .steps-container {
+    max-width: 1360px;
+    padding: 0 50px;
+  }
+  
+  .steps-content {
+    gap: 100px;
+  }
+  
+  .steps-control-item {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  .steps {
+    padding: 100px 0;
+  }
+  
+  .steps-container {
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+  
+  .steps-content {
+    gap: 80px;
+  }
+  
+  .steps-control-item {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .steps {
+    padding: 80px 0;
+  }
+  
+  .steps-container {
+    max-width: 1024px;
+    padding: 0 30px;
+  }
+  
+  .steps-content {
+    gap: 60px;
+  }
+  
+  .steps-controls {
+    flex-wrap: wrap;
+  }
+  
+  .steps-control-item {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .steps {
+    padding: 60px 0;
+  }
+  
+  .steps-container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+  
+  .steps-content {
+    gap: 48px;
+  }
+  
+  .steps-controls {
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+  
+  .steps-control-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .steps {
+    padding: 48px 0;
+  }
+  
+  .steps-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .steps-content {
+    gap: 40px;
+  }
+  
+  .steps-controls {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+  
+  .steps-control-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .steps {
+    padding: 40px 0;
+  }
+  
+  .steps-container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+  
+  .steps-content {
+    gap: 32px;
+  }
+  
+  .steps-controls {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .steps-control-item {
+    width: 100%;
+  }
+}

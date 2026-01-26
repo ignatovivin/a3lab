@@ -1,0 +1,138 @@
+.header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
+.header.header-scrolled {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header.header-scrolled.header-dark {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-menu {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 60px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  flex-shrink: 0;
+}
+
+.header-nav-group {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 56px;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.header-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  height: 100%;
+}
+
+
+.header-tab-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-tab-text {
+  color: var(--text-white);
+  white-space: nowrap;
+}
+
+.header-tab-content svg {
+  color: var(--text-white);
+  flex-shrink: 0;
+}
+
+.header-nav-group .button.header-button {
+  margin-left: auto;
+}
+
+/* Responsive styles */
+@media (min-width: 1920px) {
+  .header-menu {
+    max-width: 1920px;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  .header-menu {
+    max-width: 1360px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  .header-menu {
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .header-menu {
+    max-width: 1024px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .header-menu {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+  
+  .header-tabs {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .header-menu {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .header-tabs {
+    display: none;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .header-menu {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}

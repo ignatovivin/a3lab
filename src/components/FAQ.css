@@ -1,0 +1,141 @@
+.faq {
+  width: 100%;
+  padding: 0;
+  background-color: var(--light-blue-5);
+  position: relative;
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+.faq-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 120px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-content {
+  width: 100%;
+  max-width: 1720px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 0;
+}
+
+.faq-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.faq-title {
+  color: var(--dark-blue-100);
+  margin: 0;
+  text-align: center;
+}
+
+.faq-title-gradient {
+  background: var(--blue-gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (min-width: 1920px) {
+  .faq-container {
+    max-width: 1920px;
+    padding: 120px 60px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  .faq-container {
+    max-width: 1360px;
+    padding: 100px 50px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  .faq-container {
+    max-width: 1280px;
+    padding: 100px 40px;
+  }
+  
+  .faq-content {
+    gap: 64px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .faq {
+    border-radius: 60px;
+  }
+  
+  .faq-container {
+    max-width: 1024px;
+    padding: 80px 30px;
+  }
+  
+  .faq-content {
+    gap: 64px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .faq {
+    border-radius: 40px;
+  }
+  
+  .faq-container {
+    max-width: 768px;
+    padding: 60px 24px;
+  }
+  
+  .faq-content {
+    gap: 64px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .faq {
+    border-radius: 40px;
+  }
+  
+  .faq-container {
+    max-width: 100%;
+    padding: 60px 20px;
+  }
+  
+  .faq-content {
+    gap: 64px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .faq {
+    border-radius: 32px;
+  }
+  
+  .faq-container {
+    max-width: 100%;
+    padding: 40px 16px;
+  }
+  
+  .faq-content {
+    gap: 64px;
+  }
+}

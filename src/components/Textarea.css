@@ -1,0 +1,173 @@
+/* Textarea Base Styles */
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.textarea-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.textarea-label-inside {
+  position: absolute;
+  left: 28px;
+  top: 20px;
+  color: var(--text-black-80);
+  margin: 0;
+  pointer-events: none;
+  z-index: 1;
+  transform-origin: left top;
+  transition: top 0.15s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-label-inside.floating {
+  top: 18px;
+  transform: translateY(-50%) scale(0.75);
+}
+
+.textarea-field {
+  width: 100%;
+  min-height: 140px;
+  padding: 20px 28px;
+  border: 1px solid var(--text-black-30);
+  border-radius: 20px;
+  background-color: transparent;
+  color: var(--text-black-100);
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  resize: vertical;
+  overflow-y: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.textarea-field::placeholder {
+  color: var(--text-black-60);
+  opacity: 0;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Show placeholder only when label is floating */
+.textarea.focused .textarea-field::placeholder,
+.textarea.filled .textarea-field::placeholder {
+  opacity: 1;
+}
+
+.textarea-field:focus {
+  border-color: var(--text-black-100);
+}
+
+.textarea-field:hover:not(:disabled):not(:focus) {
+  border-color: var(--text-black-100);
+}
+
+.textarea-field:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.textarea.error .textarea-field {
+  border-color: var(--text-error);
+}
+
+.textarea.error .textarea-label-inside {
+  color: var(--text-error);
+}
+
+.textarea.filled .textarea-field {
+  color: var(--text-black-100);
+}
+
+.textarea-error-message {
+  color: var(--text-error);
+  margin-top: 0;
+  margin-left: 28px;
+  margin-bottom: 0;
+  display: block;
+}
+
+/* Responsive styles */
+@media (min-width: 1920px) {
+  .textarea-field {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  .textarea-field {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  .textarea-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+    min-height: 140px;
+  }
+  
+  .textarea-label-inside {
+    left: 24px;
+    top: 18px;
+  }
+  
+  .textarea-label-inside.floating {
+    top: 16px;
+    transform: translateY(-50%) scale(0.75);
+  }
+  
+  .textarea-error-message {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .textarea-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+    min-height: 140px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .textarea-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+    min-height: 140px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .textarea-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .textarea-field {
+    padding: 16px 20px;
+    border-radius: 12px;
+    min-height: 126px;
+  }
+  
+  .textarea-label-inside {
+    left: 20px;
+    top: 16px;
+  }
+  
+  .textarea-label-inside.floating {
+    top: 14px;
+    transform: translateY(-50%) scale(0.75);
+  }
+  
+  .textarea-error-message {
+    margin-left: 20px;
+  }
+}

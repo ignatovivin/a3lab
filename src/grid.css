@@ -1,0 +1,7 @@
+/* Grid System - 12 columns, 8px gap */
+
+:root {
+  --grid-columns: 12;
+  --grid-gap: 8px;
+  --grid-rows: 1;
+}

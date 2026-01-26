@@ -1,0 +1,246 @@
+/* Input Base Styles */
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-label-inside {
+  position: absolute;
+  left: 28px;
+  top: 20px;
+  color: var(--text-black-80);
+  margin: 0;
+  pointer-events: none;
+  z-index: 1;
+  transform-origin: left top;
+  transition: top 0.15s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-label-inside.floating {
+  top: 18px;
+  transform: translateY(-50%) scale(0.75);
+}
+
+.input-field {
+  width: 100%;
+  padding: 20px 28px;
+  border: 1px solid var(--text-black-30);
+  border-radius: 20px;
+  background-color: transparent;
+  color: var(--text-black-100);
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.input-field::placeholder {
+  color: var(--text-black-60);
+  opacity: 0;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Show placeholder only when label is floating */
+.input.focused .input-field::placeholder,
+.input.filled .input-field::placeholder {
+  opacity: 1;
+}
+
+.input-field:focus {
+  border-color: var(--text-black-100);
+}
+
+.input-field:hover:not(:disabled):not(:focus) {
+  border-color: var(--text-black-100);
+}
+
+.input-field:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.input.error .input-field {
+  border-color: var(--text-error);
+}
+
+.input.error .input-label-inside {
+  color: var(--text-error);
+}
+
+.input.filled .input-field {
+  color: var(--text-black-100);
+}
+
+.input-error-message {
+  color: var(--text-error);
+  margin-top: 0;
+  margin-left: 28px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.input.small .input-label-inside {
+  left: 24px;
+  top: 18px;
+}
+
+.input.small .input-label-inside.floating {
+  top: 16px;
+  transform: translateY(-50%) scale(0.75);
+}
+
+.input.small .input-error-message {
+  margin-left: 24px;
+}
+
+/* Input Sizes */
+.input.small .input-field {
+  padding: 18px 24px;
+  border-radius: 20px;
+}
+
+/* Responsive styles */
+@media (min-width: 1920px) {
+  .input-field {
+    border-radius: 20px;
+  }
+  
+  .input.small .input-field {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  .input-field {
+    border-radius: 20px;
+  }
+  
+  .input.small .input-field {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  .input-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+  }
+  
+  .input-label-inside {
+    left: 24px;
+    top: 18px;
+  }
+  
+  .input-label-inside.floating {
+    top: 16px;
+    transform: translateY(-50%) scale(0.75);
+  }
+  
+  .input.small .input-field {
+    padding: 16px 20px;
+    border-radius: 16px;
+  }
+  
+  .input.small .input-label-inside {
+    left: 20px;
+    top: 16px;
+  }
+  
+  .input.small .input-label-inside.floating {
+    top: 14px;
+    transform: translateY(-50%) scale(0.75);
+  }
+  
+  .input-error-message {
+    margin-left: 24px;
+  }
+  
+  .input.small .input-error-message {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .input-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+  }
+  
+  .input.small .input-field {
+    padding: 16px 20px;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .input-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+  }
+  
+  .input.small .input-field {
+    padding: 16px 20px;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .input-field {
+    padding: 18px 24px;
+    border-radius: 16px;
+  }
+  
+  .input.small .input-field {
+    padding: 16px 20px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .input-field {
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+  
+  .input-label-inside {
+    left: 20px;
+    top: 16px;
+  }
+  
+  .input-label-inside.floating {
+    top: 14px;
+    transform: translateY(-50%) scale(0.75);
+  }
+  
+  .input.small .input-field {
+    padding: 14px 18px;
+    border-radius: 12px;
+  }
+  
+  .input.small .input-label-inside {
+    left: 18px;
+    top: 14px;
+  }
+  
+  .input.small .input-label-inside.floating {
+    top: 12px;
+    transform: translateY(-50%) scale(0.75);
+  }
+  
+  .input-error-message {
+    margin-left: 20px;
+  }
+  
+  .input.small .input-error-message {
+    margin-left: 18px;
+  }
+}
