@@ -7,7 +7,7 @@ function Hero() {
       <div className="hero-container">
         <div className="hero-content">
           <h1 id="hero-title" className="text-style-h-2">
-            Приём платежей ЖКХ в топ-банках страны
+            Приём платежей в топ-банках страны
           </h1>
           <p className="text-style-body-4">
             Бесплатное подключение организаций ЖКУ к приёму платежей от населения в крупнейших банковских приложениях и платёжных сервисах без интеграции
