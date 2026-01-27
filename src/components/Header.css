@@ -125,13 +125,20 @@
   .header-nav-group .button.header-button {
     height: 44px;
     min-height: 44px;
+    width: auto;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
   .header-menu {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
+    height: 68px;
+  }
+  
+  .header-logo {
+    width: 32px;
+    height: 32px;
   }
   
   .header-tabs {
@@ -141,13 +148,20 @@
   .header-nav-group .button.header-button {
     height: 44px;
     min-height: 44px;
+    width: auto;
   }
 }
 
 @media (max-width: 374.98px) {
   .header-menu {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
+    height: 68px;
+  }
+  
+  .header-logo {
+    width: 32px;
+    height: 32px;
   }
   
   .header-tabs {
@@ -157,5 +171,6 @@
   .header-nav-group .button.header-button {
     height: 44px;
     min-height: 44px;
+    width: auto;
   }
 }

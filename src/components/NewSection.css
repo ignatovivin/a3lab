@@ -6,7 +6,6 @@
   position: relative;
   border-radius: 80px;
   overflow: hidden;
-  overflow-x: hidden;
 }
 
 .new-section-container {
@@ -303,7 +302,7 @@
 @media (min-width: 375px) and (max-width: 767.98px) {
   .new-section-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .new-section {
@@ -321,6 +320,7 @@
   
   .new-section-card {
     grid-column: span 12;
+    padding: 16px;
   }
   
   .new-section-segmented-control-wrapper {
@@ -340,7 +340,7 @@
 @media (max-width: 374.98px) {
   .new-section-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .new-section {
@@ -358,6 +358,7 @@
   
   .new-section-card {
     grid-column: span 12;
+    padding: 16px;
   }
   
   .new-section-segmented-control-wrapper {

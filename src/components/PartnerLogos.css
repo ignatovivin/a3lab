@@ -9,8 +9,6 @@
   border-radius: 80px;
   display: flex;
   flex-direction: column;
-  contain: paint;
-  clip-path: inset(0 round 80px);
 }
 
 .partner-wrapper {
@@ -19,8 +17,6 @@
   margin: 0;
   overflow: hidden;
   position: relative;
-  contain: paint;
-  clip-path: inset(0);
 }
 
 .partner-track {
@@ -62,8 +58,6 @@
   text-align: center;
   position: relative;
   z-index: 1;
-  overflow: hidden;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -723,14 +717,13 @@
   
   .partner-content {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
     margin-top: 40px;
   }
   
   .partner-block {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    grid-row-gap: 40px;
     grid-column-gap: 0;
     margin-top: 40px;
     --grid-columns: 1;
@@ -757,13 +750,16 @@
   }
   
   .partner-table-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 16px;
   }
   
   .partner-table-icon {
     width: 28px;
     height: 28px;
-    grid-column: span 1;
+    flex-shrink: 0;
   }
   
   .partner-table-space {
@@ -771,8 +767,6 @@
   }
   
   .partner-table-content {
-    grid-template-columns: 1fr;
-    --grid-columns: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -781,12 +775,12 @@
   }
   
   .partner-table-header h3 {
-    grid-column: span 1;
+    margin: 0;
   }
   
   .partner-table-content p {
-    grid-column: span 1;
     width: 100%;
+    padding-left: 44px;
   }
   
   .partner-table-line {
@@ -801,7 +795,7 @@
   .partner {
     border-radius: 24px;
     min-height: auto;
-    padding: 12px 0 48px 0;
+    padding: 12px 0 24px 0;
   }
   
   .partner-features {
@@ -810,7 +804,7 @@
   
   .partner-features-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .partner-features-header {
@@ -832,15 +826,33 @@
 
   .partner-features-plans {
     margin-top: 32px;
-    grid-template-columns: 1fr;
-    --grid-columns: 1;
-    grid-row-gap: 8px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .partner-features-plans::-webkit-scrollbar {
+    display: none;
   }
 
   .partner-features-plan {
-    grid-column: span 1;
+    flex: 0 0 auto;
+    width: 280px;
+    min-width: 280px;
     padding: 20px;
     gap: 24px;
+    scroll-snap-align: start;
+  }
+
+  .partner-features-plan-price {
+    font-size: 40px;
+    line-height: 110%;
   }
 
 }
@@ -857,14 +869,13 @@
   
   .partner-content {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
     margin-top: 40px;
   }
   
   .partner-block {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    grid-row-gap: 40px;
     grid-column-gap: 0;
     margin-top: 40px;
     --grid-columns: 1;
@@ -891,13 +902,16 @@
   }
   
   .partner-table-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 16px;
   }
   
   .partner-table-icon {
     width: 28px;
     height: 28px;
-    grid-column: span 1;
+    flex-shrink: 0;
   }
   
   .partner-table-space {
@@ -905,8 +919,6 @@
   }
   
   .partner-table-content {
-    grid-template-columns: 1fr;
-    --grid-columns: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -915,12 +927,12 @@
   }
   
   .partner-table-header h3 {
-    grid-column: span 1;
+    margin: 0;
   }
   
   .partner-table-content p {
-    grid-column: span 1;
     width: 100%;
+    padding-left: 44px;
   }
   
   .partner-table-line {
@@ -935,7 +947,7 @@
   .partner {
     border-radius: 24px;
     min-height: auto;
-    padding: 12px 0 48px 0;
+    padding: 12px 0 24px 0;
   }
   
   .partner-features {
@@ -944,7 +956,7 @@
   
   .partner-features-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .partner-features-header {
@@ -966,15 +978,33 @@
 
   .partner-features-plans {
     margin-top: 24px;
-    grid-template-columns: 1fr;
-    --grid-columns: 1;
-    grid-row-gap: 8px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .partner-features-plans::-webkit-scrollbar {
+    display: none;
   }
 
   .partner-features-plan {
-    grid-column: span 1;
+    flex: 0 0 auto;
+    width: 260px;
+    min-width: 260px;
     padding: 16px;
     gap: 20px;
+    scroll-snap-align: start;
+  }
+
+  .partner-features-plan-price {
+    font-size: 40px;
+    line-height: 110%;
   }
 
 }

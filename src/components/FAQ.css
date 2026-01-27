@@ -6,7 +6,6 @@
   position: relative;
   border-radius: 80px;
   overflow: hidden;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -120,7 +119,7 @@
   
   .faq-container {
     max-width: 100%;
-    padding: 56px 20px 88px 20px;
+    padding: 56px 16px 48px 16px;
   }
   
   .faq-content {
@@ -140,7 +139,7 @@
   
   .faq-container {
     max-width: 100%;
-    padding: 56px 20px 88px 20px;
+    padding: 56px 16px 48px 16px;
   }
   
   .faq-content {

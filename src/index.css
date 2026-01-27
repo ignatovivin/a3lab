@@ -31,22 +31,14 @@ body {
   min-height: 100vh;
   background: var(--blue-gradient-team-background);
   overflow-x: hidden;
-  max-width: 100%;
-  width: 100%;
-  overscroll-behavior-x: none;
 }
 
 html {
   overflow-x: hidden;
-  max-width: 100%;
-  width: 100%;
-  overscroll-behavior-x: none;
 }
 
 #root {
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 

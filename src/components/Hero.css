@@ -15,7 +15,6 @@
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -126,20 +125,25 @@
   .hero {
     height: 100vh;
     min-height: 100vh;
-    margin-top: -80px;
+    margin-top: -68px;
     margin-bottom: -40px;
-    padding-top: 80px;
+    padding-top: 68px;
     padding-bottom: 40px;
   }
   
   .hero-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .hero-content {
     width: 100%;
     gap: 16px;
+  }
+  
+  .hero-content .button {
+    width: 100%;
+    align-self: stretch;
   }
 }
 
@@ -147,19 +151,24 @@
   .hero {
     height: 100vh;
     min-height: 100vh;
-    margin-top: -80px;
+    margin-top: -68px;
     margin-bottom: -40px;
-    padding-top: 80px;
+    padding-top: 68px;
     padding-bottom: 40px;
   }
   
   .hero-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .hero-content {
     width: 100%;
     gap: 16px;
+  }
+  
+  .hero-content .button {
+    width: 100%;
+    align-self: stretch;
   }
 }

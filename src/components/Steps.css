@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  overflow-x: hidden;
 }
 
 .steps-container {
@@ -239,7 +238,7 @@
   
   .steps-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .steps-content {
@@ -296,7 +295,7 @@
   
   .steps-try-block {
     padding: 0;
-    margin-top: 64px;
+    margin-top: 0;
   }
 }
 
@@ -307,7 +306,7 @@
   
   .steps-container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .steps-content {
@@ -364,6 +363,6 @@
   
   .steps-try-block {
     padding: 0;
-    margin-top: 64px;
+    margin-top: 0;
   }
 }

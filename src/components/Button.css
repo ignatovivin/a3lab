@@ -457,6 +457,12 @@
 
 /* 375px - 767.98px */
 @media (min-width: 375px) and (max-width: 767.98px) {
+  .button {
+    width: 100%;
+    height: 44px;
+    min-height: 44px;
+  }
+  
   .button span {
     font-size: 15px;
     line-height: 105%;
@@ -480,6 +486,12 @@
 
 /* max-width: 374.98px (320px) */
 @media (max-width: 374.98px) {
+  .button {
+    width: 100%;
+    height: 44px;
+    min-height: 44px;
+  }
+  
   .button span {
     font-size: 14px;
     line-height: 100%;
