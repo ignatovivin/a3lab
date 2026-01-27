@@ -239,6 +239,7 @@
   grid-column: 1 / -1;
   min-width: 0;
   gap: 36px;
+  color: var(--light-blue-5);
   align-items: center;
   justify-content: center;
 }

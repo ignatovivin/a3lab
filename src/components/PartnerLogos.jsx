@@ -11,7 +11,6 @@ import icon1 from '../assets/icons/icon1.svg'
 import icon2 from '../assets/icons/icon2.svg'
 import icon3 from '../assets/icons/icon3.svg'
 import icon4 from '../assets/icons/icon4.svg'
-import icon5 from '../assets/icons/icon5.svg'
 import icon6 from '../assets/icons/icon6.svg'
 
 function PartnerLogos() {
@@ -99,19 +98,6 @@ function PartnerLogos() {
                 <p className="text-style-body-5">В личном кабинете отображаются все транзакции, принятые через Платежный сервис А3, каналы оплаты, информация о пользователе и прочие данные, которые указывает пользователь при платеже</p>
               </article>
               <div className="partner-table-space" aria-hidden="true"></div>
-              <div className="partner-table-line" aria-hidden="true"></div>
-            </li>
-            <li className="partner-table-row">
-              <div className="partner-table-line" aria-hidden="true"></div>
-              <div className="partner-table-space" aria-hidden="true"></div>
-              <article className="partner-table-content">
-                <header className="partner-table-header">
-                  <img src={icon5} alt="" className="partner-table-icon" aria-hidden="true" />
-                  <h3 className="text-style-title-3">Сокращаем количество неизвестных платежей</h3>
-                </header>
-                <p className="text-style-body-5">У поставщика коммунальных услуг есть возможность передать список своих ЛС для валидации вводимых в приложении Пользователем данных</p>
-              </article>
-              <div className="partner-table-space partner-table-space-large" aria-hidden="true"></div>
               <div className="partner-table-line" aria-hidden="true"></div>
             </li>
             <li className="partner-table-row">
