@@ -13,21 +13,20 @@
 }
 
 .ptr-logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-  border-radius: 50%;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  border-radius: 8px;
   transition: transform 0.1s ease-out;
 }
 
 .ptr-logo img {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(12%) sepia(95%) saturate(2000%) hue-rotate(220deg) brightness(95%);
 }
 
 .pull-to-refresh.refreshing .ptr-logo {
