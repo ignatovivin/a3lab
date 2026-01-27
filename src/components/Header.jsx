@@ -114,27 +114,49 @@ function Header() {
         </a>
         <div className="header-nav-group">
           <div className="header-tabs" role="menubar">
-            <Button variant="ghost" className="header-tab" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <Button 
+              variant="ghost" 
+              className="header-tab" 
+              role="menuitem"
+              onClick={() => {
+                const element = document.getElementById('how-it-works')
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              }}
+            >
               <div className="header-tab-content">
                 <span className="header-tab-text text-style-body-4">Как это работает</span>
-                <PlusIcon />
               </div>
             </Button>
-            <Button variant="ghost" className="header-tab" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <Button 
+              variant="ghost" 
+              className="header-tab" 
+              role="menuitem"
+              onClick={() => {
+                const element = document.getElementById('solutions')
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              }}
+            >
               <div className="header-tab-content">
                 <span className="header-tab-text text-style-body-4">Решения</span>
-                <PlusIcon />
               </div>
             </Button>
-            <Button variant="ghost" className="header-tab" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <Button 
+              variant="ghost" 
+              className="header-tab" 
+              role="menuitem"
+              onClick={() => {
+                const element = document.getElementById('pricing')
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              }}
+            >
               <div className="header-tab-content">
                 <span className="header-tab-text text-style-body-4">Тарифы</span>
-                <PlusIcon />
-              </div>
-            </Button>
-            <Button variant="ghost" className="header-tab" role="menuitem">
-              <div className="header-tab-content">
-                <span className="header-tab-text text-style-body-4">Рынки</span>
               </div>
             </Button>
           </div>

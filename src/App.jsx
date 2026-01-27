@@ -56,6 +56,61 @@ function App() {
     "areaServed": {
       "@type": "Country",
       "name": "Россия"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Услуги платежного сервиса А3",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "а3.банки",
+            "description": "Подключение к приему платежей через банковские приложения"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "а3.платежные сервисы",
+            "description": "Интеграция с платежными сервисами"
+          }
+        }
+      ]
+    }
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://a3lab.ru/"
+      }
+    ]
+  }
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ООО «Платёжный сервис А3»",
+    "image": "https://a3lab.ru/logo.svg",
+    "telephone": "+7-800-100-39-00",
+    "url": "https://a3lab.ru",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RU"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
     }
   }
 
@@ -70,6 +125,12 @@ function App() {
       </script>
       <script type="application/ld+json">
         {JSON.stringify(serviceSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(localBusinessSchema)}
       </script>
       
       <a href="#main-content" className="skip-link">

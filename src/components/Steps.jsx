@@ -10,7 +10,7 @@ function Steps() {
   ]
 
   return (
-    <section className="steps" aria-labelledby="steps-title">
+    <section id="how-it-works" className="steps" aria-labelledby="steps-title">
       <div className="steps-container">
         <div className="steps-content">
           <header className="steps-title-block">

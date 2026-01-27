@@ -60,7 +60,7 @@ function PartnerFeatures() {
   ]
 
   return (
-    <section className="partner-features" aria-labelledby="features-title">
+    <section id="pricing" className="partner-features" aria-labelledby="features-title">
       <div className="partner-features-container">
         <div className="partner-features-content">
           <header className="partner-features-header">

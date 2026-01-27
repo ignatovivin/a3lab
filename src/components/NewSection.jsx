@@ -142,7 +142,7 @@ function NewSection() {
   const cards = cardsByTab[activeTab] || cardsByTab.start
 
   return (
-    <section className="new-section" aria-labelledby="new-section-title">
+    <section id="solutions" className="new-section" aria-labelledby="new-section-title">
       <div className="new-section-container">
         <div className="new-section-content">
           <header className="new-section-header">
