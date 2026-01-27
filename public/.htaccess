@@ -5,8 +5,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
-# Перенаправление HTTP на HTTPS
+# Перенаправление HTTP на HTTPS (для Reg.ru и других хостингов с прокси)
 RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{SERVER_PORT} !^443$
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Обработка SPA (Single Page Application)
