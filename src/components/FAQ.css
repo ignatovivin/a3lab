@@ -1,24 +1,29 @@
 .faq {
   width: 100%;
+  max-width: 100%;
   padding: 0;
   background-color: var(--light-blue-5);
   position: relative;
   border-radius: 80px;
   overflow: hidden;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .faq-container {
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 120px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .faq-content {
   width: 100%;
-  max-width: 1720px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -52,16 +57,11 @@
   flex-direction: column;
   gap: 8px;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 /* Responsive styles */
-@media (min-width: 1920px) {
-  .faq-container {
-    max-width: 1920px;
-    padding: 120px 60px;
-  }
-}
-
 @media (min-width: 1600px) and (max-width: 1919.98px) {
   .faq-container {
     max-width: 1360px;
@@ -71,11 +71,12 @@
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   .faq-container {
-    max-width: 1280px;
+    max-width: 100%;
     padding: 100px 40px;
   }
   
   .faq-content {
+    max-width: 100%;
     gap: 64px;
   }
 }
@@ -86,11 +87,12 @@
   }
   
   .faq-container {
-    max-width: 1024px;
+    max-width: 100%;
     padding: 80px 30px;
   }
   
   .faq-content {
+    max-width: 100%;
     gap: 64px;
   }
 }
@@ -101,41 +103,52 @@
   }
   
   .faq-container {
-    max-width: 768px;
+    max-width: 100%;
     padding: 60px 24px;
   }
   
   .faq-content {
-    gap: 64px;
+    max-width: 100%;
+    gap: 48px;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
-  .faq {
-    border-radius: 40px;
-  }
-  
-  .faq-container {
-    max-width: 100%;
-    padding: 60px 20px;
-  }
-  
-  .faq-content {
-    gap: 64px;
-  }
-}
-
-@media (max-width: 374.98px) {
   .faq {
     border-radius: 32px;
   }
   
   .faq-container {
     max-width: 100%;
-    padding: 40px 16px;
+    padding: 56px 20px 88px 20px;
   }
   
   .faq-content {
-    gap: 64px;
+    max-width: 100%;
+    gap: 32px;
+  }
+  
+  .faq-items {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .faq {
+    border-radius: 24px;
+  }
+  
+  .faq-container {
+    max-width: 100%;
+    padding: 56px 20px 88px 20px;
+  }
+  
+  .faq-content {
+    max-width: 100%;
+    gap: 32px;
+  }
+  
+  .faq-items {
+    gap: 8px;
   }
 }

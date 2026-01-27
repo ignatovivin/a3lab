@@ -68,7 +68,7 @@ function Footer() {
         </div>
         <div className="footer-spacer footer-spacer-large" aria-hidden="true"></div>
         <div className="footer-bottom">
-          <p className="footer-copyright text-style-caption">© 2023 ООО «Платёжный сервис А3»</p>
+          <p className="footer-copyright text-style-caption">© {new Date().getFullYear()} ООО «Платёжный сервис А3»</p>
           <div className="footer-contacts">
             <a href="tel:+78001003900" className="footer-phone text-style-body-5">8 800 100 39 00</a>
             <a href="https://vc.ru" target="_blank" rel="noopener noreferrer" className="footer-vc-text text-style-body-5">Мы на vc.ru</a>

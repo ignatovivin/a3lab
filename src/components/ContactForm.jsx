@@ -51,7 +51,7 @@ function ContactForm() {
         if (!value || value.trim() === '') {
           error = 'Заполните телефон'
         } else {
-          const phoneRegex = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/
+          const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/
           if (!phoneRegex.test(value.trim())) {
             error = 'Заполните телефон'
           }
@@ -184,7 +184,7 @@ function ContactForm() {
             <div className="contact-form-spacer-small" aria-hidden="true"></div>
             <p className="contact-form-description text-style-body-4">
               Оставьте свои контакты и наш менеджер свяжется с вами<br />
-              в течении двух рабочих дней
+              в течение двух рабочих дней
             </p>
             <div className="contact-form-spacer-small" aria-hidden="true"></div>
           </div>

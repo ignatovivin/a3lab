@@ -1,18 +1,23 @@
 .new-section {
   width: 100%;
+  max-width: 100%;
   padding: 120px 0;
   background-color: transparent;
   position: relative;
   border-radius: 80px;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .new-section-container {
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .new-section-content {
@@ -29,7 +34,8 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding: 0 100px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .new-section-title {
@@ -68,11 +74,13 @@
   padding: 6px;
   height: 56px;
   width: auto;
+  max-width: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .new-section-segmented-control-segment {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +99,6 @@
   outline: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width: fit-content;
 }
 
 .new-section-segmented-control-segment.active {
@@ -151,12 +158,16 @@
   margin: 0;
   color: var(--dark-blue-100);
   text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .new-section-card-subtitle {
   margin: 0;
   color: var(--text-black-80);
   text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .new-section-card-features {
@@ -189,6 +200,11 @@
 
 /* Responsive styles */
 @media (min-width: 1920px) {
+  .new-section {
+    padding: 120px 0;
+    border-radius: 80px;
+  }
+  
   .new-section-container {
     max-width: 1920px;
     padding: 0 60px;
@@ -200,6 +216,11 @@
 }
 
 @media (min-width: 1600px) and (max-width: 1919.98px) {
+  .new-section {
+    padding: 100px 0;
+    border-radius: 64px;
+  }
+  
   .new-section-container {
     max-width: 1360px;
     padding: 0 50px;
@@ -211,8 +232,13 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
+  .new-section {
+    padding: 80px 0;
+    border-radius: 48px;
+  }
+  
   .new-section-container {
-    max-width: 1280px;
+    max-width: 100%;
     padding: 0 40px;
   }
   
@@ -222,13 +248,14 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
-  .new-section-container {
-    max-width: 1024px;
-    padding: 0 30px;
+  .new-section {
+    padding: 60px 0;
+    border-radius: 40px;
   }
   
-  .new-section-header {
-    padding: 0 40px;
+  .new-section-container {
+    max-width: 100%;
+    padding: 0 30px;
   }
   
   .new-section-card {
@@ -237,17 +264,39 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
+  .new-section {
+    padding: 60px 0;
+    border-radius: 40px;
+  }
+  
   .new-section-container {
-    max-width: 768px;
+    max-width: 100%;
     padding: 0 24px;
   }
   
-  .new-section-header {
-    padding: 0 24px;
+  .new-section-title {
+    max-width: 100%;
+  }
+  
+  .new-section-description {
+    max-width: 100%;
   }
   
   .new-section-card {
     grid-column: span 6;
+  }
+  
+  .new-section-segmented-control-wrapper {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+    gap: 4px;
+  }
+  
+  .new-section-segmented-control-segment {
+    padding: 8px 14px;
+    font-size: 15px;
   }
 }
 
@@ -257,26 +306,70 @@
     padding: 0 20px;
   }
   
-  .new-section-header {
-    padding: 0 20px;
+  .new-section {
+    padding: 60px 0;
+    border-radius: 40px;
+  }
+  
+  .new-section-title {
+    max-width: 100%;
+  }
+  
+  .new-section-description {
+    max-width: 100%;
   }
   
   .new-section-card {
     grid-column: span 12;
+  }
+  
+  .new-section-segmented-control-wrapper {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    gap: 4px;
+    max-width: 100%;
+  }
+  
+  .new-section-segmented-control-segment {
+    padding: 8px 12px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 374.98px) {
   .new-section-container {
     max-width: 100%;
-    padding: 0 16px;
+    padding: 0 20px;
   }
   
-  .new-section-header {
-    padding: 0 16px;
+  .new-section {
+    padding: 40px 0;
+    border-radius: 32px;
+  }
+  
+  .new-section-title {
+    max-width: 100%;
+  }
+  
+  .new-section-description {
+    max-width: 100%;
   }
   
   .new-section-card {
     grid-column: span 12;
+  }
+  
+  .new-section-segmented-control-wrapper {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    gap: 4px;
+    max-width: 100%;
+  }
+  
+  .new-section-segmented-control-segment {
+    padding: 6px 10px;
+    font-size: 13px;
   }
 }

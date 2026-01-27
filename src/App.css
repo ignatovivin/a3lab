@@ -1,12 +1,23 @@
 .app {
   width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .app main {
   flex: 1;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Global section styles for proper width containment */
+.app section,
+.app main > div {
+  max-width: 100%;
 }
 
 /* Skip link for accessibility */

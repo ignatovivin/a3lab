@@ -10,29 +10,9 @@ function PlusIcon() {
   )
 }
 
-function BurgerIcon({ isOpen }) {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {isOpen ? (
-        <>
-          <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </>
-      ) : (
-        <>
-          <path d="M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M3 6H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </>
-      )}
-    </svg>
-  )
-}
-
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isDark, setIsDark] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -124,38 +104,6 @@ function Header() {
     }
   }, [])
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
-
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false)
-  }
-
-  // Закрываем меню при изменении размера окна (если перешли на десктоп)
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 1023) {
-        setIsMobileMenuOpen(false)
-      }
-    }
-
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  // Блокируем скролл когда меню открыто
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [isMobileMenuOpen])
-
   return (
     <header className={`header ${isScrolled ? 'header-scrolled' : ''} ${isDark ? 'header-dark' : ''}`} role="banner">
       <nav className="header-menu" aria-label="Основная навигация">
@@ -202,77 +150,8 @@ function Header() {
           >
             Оставить заявку
           </Button>
-          <Button
-            variant="ghost"
-            className="header-burger"
-            onClick={toggleMobileMenu}
-            aria-label={isMobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
-            aria-expanded={isMobileMenuOpen}
-          >
-            <BurgerIcon isOpen={isMobileMenuOpen} />
-          </Button>
         </div>
       </nav>
-      {isMobileMenuOpen && (
-        <div className="header-mobile-menu" onClick={closeMobileMenu}>
-          <div className="header-mobile-menu-content" onClick={(e) => e.stopPropagation()}>
-            <nav className="header-mobile-nav" aria-label="Мобильная навигация">
-              <Button
-                variant="ghost"
-                className="header-mobile-tab"
-                onClick={closeMobileMenu}
-              >
-                <div className="header-tab-content">
-                  <span className="header-tab-text text-style-body-4">Как это работает</span>
-                  <PlusIcon />
-                </div>
-              </Button>
-              <Button
-                variant="ghost"
-                className="header-mobile-tab"
-                onClick={closeMobileMenu}
-              >
-                <div className="header-tab-content">
-                  <span className="header-tab-text text-style-body-4">Решения</span>
-                  <PlusIcon />
-                </div>
-              </Button>
-              <Button
-                variant="ghost"
-                className="header-mobile-tab"
-                onClick={closeMobileMenu}
-              >
-                <div className="header-tab-content">
-                  <span className="header-tab-text text-style-body-4">Тарифы</span>
-                  <PlusIcon />
-                </div>
-              </Button>
-              <Button
-                variant="ghost"
-                className="header-mobile-tab"
-                onClick={closeMobileMenu}
-              >
-                <div className="header-tab-content">
-                  <span className="header-tab-text text-style-body-4">Рынки</span>
-                </div>
-              </Button>
-              <Button
-                variant="blue"
-                className="header-mobile-button"
-                onClick={() => {
-                  closeMobileMenu()
-                  const formElement = document.getElementById('contact-form')
-                  if (formElement) {
-                    formElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                  }
-                }}
-              >
-                Оставить заявку
-              </Button>
-            </nav>
-          </div>
-        </div>
-      )}
     </header>
   )
 }

@@ -56,7 +56,7 @@ function WhyChooseUs() {
     {
       id: 4,
       title: 'Масштабируемость',
-      subtitle: <>Модульная архитектура растет вместе<br />вашим бизнесом</>,
+      subtitle: <>Модульная архитектура растет вместе<br />с вашим бизнесом</>,
       icon: (
         <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="45" cy="48" r="32" fill="#DCEBFD" fillOpacity="0.8"/>
