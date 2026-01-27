@@ -204,11 +204,6 @@
     border-radius: 24px;
     margin-bottom: 100px;
   }
-  
-  .contact-form-row {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -238,11 +233,6 @@
     padding: 32px;
     margin-bottom: 80px;
     max-width: 100%;
-  }
-  
-  .contact-form-row {
-    grid-template-columns: 1fr;
-    gap: 16px;
   }
   
   .contact-form-spacer-small {

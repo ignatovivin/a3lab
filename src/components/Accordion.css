@@ -134,6 +134,8 @@
   .accordion-header {
     padding: 32px 16px;
     gap: 16px;
+    min-height: 120px;
+    box-sizing: border-box;
   }
   
   .accordion-content {
