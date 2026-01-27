@@ -207,13 +207,17 @@
 
 .partner-features {
   width: 100%;
+  max-width: 100%;
+  padding: 140px 0;
+  overflow: hidden;
+}
+
+.partner-features-container {
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 60px;
-  margin-top: 140px;
-  margin-bottom: 140px;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .partner-features-content {
@@ -427,6 +431,10 @@
   }
   
   .partner-features {
+    padding: 120px 0;
+  }
+  
+  .partner-features-container {
     max-width: 1360px;
     padding: 0 50px;
   }
@@ -494,6 +502,10 @@
   }
   
   .partner-features {
+    padding: 100px 0;
+  }
+  
+  .partner-features-container {
     max-width: 100%;
     padding: 0 40px;
   }
@@ -561,6 +573,10 @@
   }
   
   .partner-features {
+    padding: 80px 0;
+  }
+  
+  .partner-features-container {
     max-width: 100%;
     padding: 0 30px;
   }
@@ -656,6 +672,10 @@
   }
   
   .partner-features {
+    padding: 60px 0;
+  }
+  
+  .partner-features-container {
     max-width: 100%;
     padding: 0 24px;
   }
@@ -785,10 +805,12 @@
   }
   
   .partner-features {
+    padding: 40px 0 48px 0;
+  }
+  
+  .partner-features-container {
     max-width: 100%;
     padding: 0 20px;
-    margin-top: 40px;
-    margin-bottom: 48px;
   }
   
   .partner-features-header {
@@ -917,10 +939,12 @@
   }
   
   .partner-features {
+    padding: 40px 0 48px 0;
+  }
+  
+  .partner-features-container {
     max-width: 100%;
     padding: 0 20px;
-    margin-top: 40px;
-    margin-bottom: 48px;
   }
   
   .partner-features-header {
