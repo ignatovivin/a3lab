@@ -84,7 +84,7 @@
 .partner-text-left {
   text-align: center;
   margin: 0;
-  color: var(--text-black-100);
+  color: var(--text-black-80);
 }
 
 .partner-content > .partner-text-left {
@@ -169,6 +169,7 @@
   flex-shrink: 0;
   grid-column: 1 / span 2;
   align-self: start;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(12%) saturate(488%) hue-rotate(169deg) brightness(94%) contrast(87%);
 }
 
 .partner-table-header h3 {
@@ -393,56 +394,53 @@
   .partner-wrapper {
     max-width: 100%;
   }
-  
+
   .partner-track {
     gap: 100px;
     padding: 0;
   }
-  
+
   .partner-content {
     max-width: 1360px;
     padding: 0 50px;
   }
-  
+
   .partner-block {
     --grid-columns: 12;
     --grid-gap: 8px;
   }
-  
+
   .partner-text-block {
     grid-column: span 3;
   }
-  
+
   .partner-table {
     grid-column: 1 / -1;
     max-width: 100%;
   }
-  
+
   .partner {
     border-radius: 64px;
     min-height: 1000px;
     padding: 32px 0 80px 0;
   }
-  
+
   .partner-features {
     padding: 120px 0;
   }
-  
+
   .partner-features-container {
     max-width: 1360px;
     padding: 0 50px;
   }
-  
+
   .partner-features-header {
     --grid-columns: 12;
     --grid-gap: 8px;
   }
-  
+
   .partner-features-title-block {
     grid-column: 1 / -1;
-  }
-  
-  .partner-features-title-block {
     gap: 28px;
   }
 
@@ -457,63 +455,59 @@
     padding: 20px;
     gap: 24px;
   }
-
 }
 
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   .partner-wrapper {
     max-width: 100%;
   }
-  
+
   .partner-track {
     gap: 80px;
     padding: 0;
   }
-  
+
   .partner-content {
     max-width: 100%;
     padding: 0 40px;
   }
-  
+
   .partner-block {
     --grid-columns: 12;
     --grid-gap: 8px;
   }
-  
+
   .partner-text-block {
     grid-column: span 3;
   }
-  
+
   .partner-table {
     grid-column: 1 / -1;
     max-width: 100%;
   }
-  
+
   .partner {
     border-radius: 60px;
     min-height: auto;
     padding: 30px 0 100px 0;
   }
-  
+
   .partner-features {
     padding: 100px 0;
   }
-  
+
   .partner-features-container {
     max-width: 100%;
     padding: 0 40px;
   }
-  
+
   .partner-features-header {
     --grid-columns: 12;
     --grid-gap: 8px;
   }
-  
+
   .partner-features-title-block {
     grid-column: 1 / -1;
-  }
-  
-  .partner-features-title-block {
     gap: 28px;
   }
 
@@ -528,63 +522,59 @@
     padding: 20px;
     gap: 24px;
   }
-
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
   .partner-wrapper {
     max-width: 100%;
   }
-  
+
   .partner-track {
     gap: 60px;
     padding: 0;
   }
-  
+
   .partner-content {
     max-width: 100%;
     padding: 0 30px;
   }
-  
+
   .partner-block {
     --grid-columns: 12;
     --grid-gap: 8px;
   }
-  
+
   .partner-text-block {
     grid-column: span 3;
   }
-  
+
   .partner-table {
     grid-column: 1 / -1;
     max-width: 100%;
   }
-  
+
   .partner {
     border-radius: 48px;
     min-height: auto;
     padding: 28px 0 60px 0;
   }
-  
+
   .partner-features {
     padding: 80px 0;
   }
-  
+
   .partner-features-container {
     max-width: 100%;
     padding: 0 30px;
   }
-  
+
   .partner-features-header {
     --grid-columns: 12;
     --grid-gap: 8px;
   }
-  
+
   .partner-features-title-block {
     grid-column: 1 / -1;
-  }
-  
-  .partner-features-title-block {
     gap: 28px;
   }
 
@@ -599,7 +589,6 @@
     padding: 20px;
     gap: 24px;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -685,9 +674,6 @@
   
   .partner-features-title-block {
     grid-column: span 1;
-  }
-  
-  .partner-features-title-block {
     gap: 24px;
   }
 
@@ -702,7 +688,6 @@
     padding: 20px;
     gap: 24px;
   }
-
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
@@ -725,13 +710,22 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-column-gap: 0;
-    margin-top: 40px;
+    margin-top: 24px;
     --grid-columns: 1;
     --grid-gap: 0;
   }
   
   .partner-text-block {
     grid-column: span 1;
+  }
+  
+  .partner-text-left,
+  .partner-content h2 {
+    text-align: left;
+  }
+  
+  .partner-content > .partner-text-left {
+    margin-top: 16px;
   }
   
   .partner-table {
@@ -776,6 +770,9 @@
   
   .partner-table-header h3 {
     margin: 0;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
   }
   
   .partner-table-content p {
@@ -790,6 +787,12 @@
   /* Скрываем начальные линии (первый элемент .partner-table-line в каждом row) */
   .partner-table-row > .partner-table-line:first-child {
     display: none;
+  }
+  
+  /* Исключение: показываем линию над первым рядом */
+  .partner-table-row:first-child > .partner-table-line:first-child {
+    display: block;
+    margin-bottom: 16px;
   }
   
   .partner {
@@ -810,7 +813,6 @@
   .partner-features-header {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    grid-row-gap: 20px;
     grid-column-gap: 0;
     --grid-columns: 1;
     --grid-gap: 0;
@@ -818,10 +820,13 @@
   
   .partner-features-title-block {
     grid-column: span 1;
+    gap: 16px;
+    align-items: flex-start;
   }
-  
-  .partner-features-title-block {
-    gap: 40px;
+
+  .partner-features-title-block h4,
+  .partner-features-title-block p {
+    text-align: left;
   }
 
   .partner-features-plans {
@@ -854,7 +859,6 @@
     font-size: 40px;
     line-height: 110%;
   }
-
 }
 
 @media (max-width: 374.98px) {
@@ -877,13 +881,22 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-column-gap: 0;
-    margin-top: 40px;
+    margin-top: 24px;
     --grid-columns: 1;
     --grid-gap: 0;
   }
   
   .partner-text-block {
     grid-column: span 1;
+  }
+  
+  .partner-text-left,
+  .partner-content h2 {
+    text-align: left;
+  }
+  
+  .partner-content > .partner-text-left {
+    margin-top: 16px;
   }
   
   .partner-table {
@@ -928,6 +941,9 @@
   
   .partner-table-header h3 {
     margin: 0;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
   }
   
   .partner-table-content p {
@@ -942,6 +958,12 @@
   /* Скрываем начальные линии (первый элемент .partner-table-line в каждом row) */
   .partner-table-row > .partner-table-line:first-child {
     display: none;
+  }
+  
+  /* Исключение: показываем линию над первым рядом */
+  .partner-table-row:first-child > .partner-table-line:first-child {
+    display: block;
+    margin-bottom: 16px;
   }
   
   .partner {
@@ -962,7 +984,6 @@
   .partner-features-header {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    grid-row-gap: 16px;
     grid-column-gap: 0;
     --grid-columns: 1;
     --grid-gap: 0;
@@ -970,10 +991,13 @@
   
   .partner-features-title-block {
     grid-column: span 1;
+    gap: 16px;
+    align-items: flex-start;
   }
-  
-  .partner-features-title-block {
-    gap: 40px;
+
+  .partner-features-title-block h4,
+  .partner-features-title-block p {
+    text-align: left;
   }
 
   .partner-features-plans {
@@ -1006,6 +1030,5 @@
     font-size: 40px;
     line-height: 110%;
   }
-
 }
 

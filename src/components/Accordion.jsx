@@ -44,23 +44,27 @@ function Accordion({
 
   return (
     <div className={accordionClasses}>
-      <button
-        type="button"
-        className="accordion-header"
-        onClick={handleToggle}
-        aria-expanded={isOpen}
-        aria-controls={`${accordionId}-content`}
-      >
-        <h3 className="accordion-title text-style-title-2">{title}</h3>
-        <span className="accordion-icon" aria-hidden="true">
-          {isOpen ? <MinusIcon /> : <PlusIcon />}
-        </span>
-      </button>
+      <h3 className="accordion-heading">
+        <button
+          type="button"
+          id={`${accordionId}-header`}
+          className="accordion-header"
+          onClick={handleToggle}
+          aria-expanded={isOpen}
+          aria-controls={`${accordionId}-content`}
+        >
+          <span className="accordion-title text-style-title-2">{title}</span>
+          <span className="accordion-icon" aria-hidden="true">
+            {isOpen ? <MinusIcon /> : <PlusIcon />}
+          </span>
+        </button>
+      </h3>
       {isOpen && (
         <div
           id={`${accordionId}-content`}
           className="accordion-content"
           role="region"
+          aria-labelledby={`${accordionId}-header`}
         >
           <div className="accordion-text text-style-body-4">
             {children}

@@ -49,83 +49,84 @@ function PartnerLogos() {
         </p>
         <div className="partner-block">
           <ul className="partner-table" role="list">
-          <li className="partner-table-row">
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <article className="partner-table-content">
-              <header className="partner-table-header">
-                <img src={icon1} alt="" className="partner-table-icon" aria-hidden="true" />
-                <h3 className="text-style-title-3">Подключаем к крупнейшим банкам<br />по одному типовому договору</h3>
-              </header>
-              <p className="text-style-body-5">Один договор позволяет организовать оперативное подключение к приёму платежей организаций коммунальных услуг во всех топ-банках страны</p>
-            </article>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <div className="partner-table-line" aria-hidden="true"></div>
-          </li>
-          <li className="partner-table-row">
-            <div className="partner-table-line" aria-hidden="true"></div>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <article className="partner-table-content">
-              <header className="partner-table-header">
-                <img src={icon2} alt="" className="partner-table-icon" aria-hidden="true" />
-                <h3 className="text-style-title-3">Формируем единый<br />реестр платежей</h3>
-              </header>
-              <p className="text-style-body-5">Платежи от всех банков собираем в одном платёжном поручении, что экономит трудозатраты на обработку всех входящих платежей в десятки раз</p>
-            </article>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <div className="partner-table-line" aria-hidden="true"></div>
-          </li>
-          <li className="partner-table-row">
-            <div className="partner-table-line" aria-hidden="true"></div>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <article className="partner-table-content">
-              <header className="partner-table-header">
-                <img src={icon3} alt="" className="partner-table-icon" aria-hidden="true" />
-                <h3 className="text-style-title-3">Реализуем готовое платёжное<br />решение для сайта поставщика услуг</h3>
-              </header>
-              <p className="text-style-body-5">Заменяет эквайринг при онлайн-оплате и даёт больше возможностей для роста дохода</p>
-            </article>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <div className="partner-table-line" aria-hidden="true"></div>
-          </li>
-          <li className="partner-table-row">
-            <div className="partner-table-line" aria-hidden="true"></div>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <article className="partner-table-content">
-              <header className="partner-table-header">
-                <img src={icon4} alt="" className="partner-table-icon" aria-hidden="true" />
-                <h3 className="text-style-title-3">Отображаем всю историю платежей</h3>
-              </header>
-              <p className="text-style-body-5">В личном кабинете отображаются все транзакции, принятые через Платежный сервис А3, каналы оплаты, информация о пользователе и прочие данные, которые указывает пользователь при платеже</p>
-            </article>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <div className="partner-table-line" aria-hidden="true"></div>
-          </li>
-          <li className="partner-table-row">
-            <div className="partner-table-line" aria-hidden="true"></div>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <article className="partner-table-content">
-              <header className="partner-table-header">
-                <img src={icon5} alt="" className="partner-table-icon" aria-hidden="true" />
-                <h3 className="text-style-title-3">Сокращаем количество<br />неидентифицированных платежей</h3>
-              </header>
-              <p className="text-style-body-5">У поставщика коммунальных услуг есть возможность передать список своих ЛС для валидации вводимых в приложении Пользователем данных</p>
-            </article>
-            <div className="partner-table-space partner-table-space-large" aria-hidden="true"></div>
-            <div className="partner-table-line" aria-hidden="true"></div>
-          </li>
-          <li className="partner-table-row">
-            <div className="partner-table-line" aria-hidden="true"></div>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <article className="partner-table-content">
-              <header className="partner-table-header">
-                <img src={icon6} alt="" className="partner-table-icon" aria-hidden="true" />
-                <h3 className="text-style-title-3">Отправляем уведомления<br />в банковских приложениях</h3>
-              </header>
-              <p className="text-style-body-5">Плательщик получает уведомление о выставленном счёте, своевременно совершает оплату, благодаря чему сокращается дебиторская задолженность</p>
-            </article>
-            <div className="partner-table-space" aria-hidden="true"></div>
-            <div className="partner-table-line partner-table-line-last" aria-hidden="true"></div>
-          </li>
+            <li className="partner-table-row">
+              <div className="partner-table-line" aria-hidden="true"></div>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <article className="partner-table-content">
+                <header className="partner-table-header">
+                  <img src={icon1} alt="" className="partner-table-icon" aria-hidden="true" />
+                  <h3 className="text-style-title-3">Подключаем к крупнейшим банкам</h3>
+                </header>
+                <p className="text-style-body-5">Один договор позволяет организовать оперативное подключение к приёму платежей организаций коммунальных услуг во всех топ-банках страны</p>
+              </article>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <div className="partner-table-line" aria-hidden="true"></div>
+            </li>
+            <li className="partner-table-row">
+              <div className="partner-table-line" aria-hidden="true"></div>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <article className="partner-table-content">
+                <header className="partner-table-header">
+                  <img src={icon2} alt="" className="partner-table-icon" aria-hidden="true" />
+                  <h3 className="text-style-title-3">Формируем единый реестр платежей</h3>
+                </header>
+                <p className="text-style-body-5">Платежи от всех банков собираем в одном платёжном поручении, что экономит трудозатраты на обработку всех входящих платежей в десятки раз</p>
+              </article>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <div className="partner-table-line" aria-hidden="true"></div>
+            </li>
+            <li className="partner-table-row">
+              <div className="partner-table-line" aria-hidden="true"></div>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <article className="partner-table-content">
+                <header className="partner-table-header">
+                  <img src={icon3} alt="" className="partner-table-icon" aria-hidden="true" />
+                  <h3 className="text-style-title-3">Реализуем готовое платёжное решение</h3>
+                </header>
+                <p className="text-style-body-5">Заменяет эквайринг при онлайн-оплате и даёт больше возможностей для роста дохода</p>
+              </article>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <div className="partner-table-line" aria-hidden="true"></div>
+            </li>
+            <li className="partner-table-row">
+              <div className="partner-table-line" aria-hidden="true"></div>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <article className="partner-table-content">
+                <header className="partner-table-header">
+                  <img src={icon4} alt="" className="partner-table-icon" aria-hidden="true" />
+                  <h3 className="text-style-title-3">Отображаем всю историю платежей</h3>
+                </header>
+                <p className="text-style-body-5">В личном кабинете отображаются все транзакции, принятые через Платежный сервис А3, каналы оплаты, информация о пользователе и прочие данные, которые указывает пользователь при платеже</p>
+              </article>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <div className="partner-table-line" aria-hidden="true"></div>
+            </li>
+            <li className="partner-table-row">
+              <div className="partner-table-line" aria-hidden="true"></div>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <article className="partner-table-content">
+                <header className="partner-table-header">
+                  <img src={icon5} alt="" className="partner-table-icon" aria-hidden="true" />
+                  <h3 className="text-style-title-3">Сокращаем количество неизвестных платежей</h3>
+                </header>
+                <p className="text-style-body-5">У поставщика коммунальных услуг есть возможность передать список своих ЛС для валидации вводимых в приложении Пользователем данных</p>
+              </article>
+              <div className="partner-table-space partner-table-space-large" aria-hidden="true"></div>
+              <div className="partner-table-line" aria-hidden="true"></div>
+            </li>
+            <li className="partner-table-row">
+              <div className="partner-table-line" aria-hidden="true"></div>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <article className="partner-table-content">
+                <header className="partner-table-header">
+                  <img src={icon6} alt="" className="partner-table-icon" aria-hidden="true" />
+                  <h3 className="text-style-title-3">Отправляем уведомления<br />в банковских приложениях</h3>
+                </header>
+                <p className="text-style-body-5">Плательщик получает уведомление о выставленном счёте, своевременно совершает оплату, благодаря чему сокращается дебиторская задолженность</p>
+              </article>
+              <div className="partner-table-space" aria-hidden="true"></div>
+              <div className="partner-table-line partner-table-line-last" aria-hidden="true"></div>
+            </li>
           </ul>
         </div>
       </div>

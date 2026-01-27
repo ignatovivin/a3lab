@@ -269,12 +269,16 @@
     padding-top: 60px;
   }
   
+  .contact-form-title {
+    margin-bottom: 24px;
+  }
+  
   .contact-form-description {
     max-width: 100%;
   }
   
   .contact-form-card {
-    padding: 24px;
+    padding: 24px 16px 16px 16px;
     border-radius: 20px;
     margin-bottom: 60px;
     gap: 24px;
@@ -291,7 +295,7 @@
   }
   
   .contact-form-spacer-small {
-    height: 24px;
+    display: none;
   }
   
   .contact-form-button {
@@ -318,18 +322,26 @@
     padding-top: 40px;
   }
   
+  .contact-form-title {
+    margin-bottom: 24px;
+  }
+  
   .contact-form-description {
     max-width: 100%;
   }
   
   .contact-form-card {
-    padding: 20px;
+    padding: 24px 16px 16px 16px;
     border-radius: 16px;
     margin-bottom: 40px;
     gap: 20px;
     max-width: 100%;
   }
   
+  .contact-form-spacer-small {
+    display: none;
+  }
+
   .contact-form-fields {
     gap: 16px;
   }

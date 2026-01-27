@@ -119,12 +119,23 @@
   
   .faq-container {
     max-width: 100%;
-    padding: 56px 16px 48px 16px;
+    padding: 40px 16px;
   }
   
   .faq-content {
     max-width: 100%;
     gap: 32px;
+  }
+  
+  .faq-header {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .faq-title {
+    font-size: 40px;
+    line-height: 105%;
+    text-align: left;
   }
   
   .faq-items {
@@ -139,12 +150,23 @@
   
   .faq-container {
     max-width: 100%;
-    padding: 56px 16px 48px 16px;
+    padding: 40px 16px;
   }
   
   .faq-content {
     max-width: 100%;
     gap: 32px;
+  }
+  
+  .faq-header {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .faq-title {
+    font-size: 28px;
+    line-height: 105%;
+    text-align: left;
   }
   
   .faq-items {

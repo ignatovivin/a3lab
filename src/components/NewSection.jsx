@@ -147,7 +147,7 @@ function NewSection() {
         <div className="new-section-content">
           <header className="new-section-header">
             <h2 id="new-section-title" className="new-section-title text-style-h-3">
-              Соберите платформу под себя
+              Соберите платформу<br />под себя
             </h2>
             <p className="new-section-description text-style-body-3">
               Начните с базовых функций и добавляйте модули по мере роста бизнеса

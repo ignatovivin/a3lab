@@ -340,15 +340,18 @@
 
   .why-choose-us-title-block {
     gap: 20px;
+    align-items: flex-start;
   }
 
   .why-choose-us-title {
     font-size: 32px;
     max-width: 100%;
+    text-align: left;
   }
 
   .why-choose-us-description {
     max-width: 100%;
+    text-align: left;
   }
 
   .why-choose-us-cards {
@@ -388,15 +391,18 @@
 
   .why-choose-us-title-block {
     gap: 16px;
+    align-items: flex-start;
   }
 
   .why-choose-us-title {
     font-size: 28px;
     max-width: 100%;
+    text-align: left;
   }
 
   .why-choose-us-description {
     max-width: 100%;
+    text-align: left;
   }
 
   .why-choose-us-cards {
