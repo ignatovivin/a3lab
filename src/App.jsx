@@ -9,6 +9,7 @@ import Steps from './components/Steps'
 import FAQ from './components/FAQ'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
+import PullToRefresh from './components/PullToRefresh'
 
 function App() {
   // Структурированные данные для SEO
@@ -116,6 +117,7 @@ function App() {
 
   return (
     <div className="app">
+      <PullToRefresh />
       {/* Структурированные данные для SEO */}
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}

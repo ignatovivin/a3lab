@@ -25,16 +25,19 @@ p, h1, h2, h3, h4, h5, h6, span, a, li {
 }
 
 
+html {
+  overflow-x: hidden;
+  background-color: #070c2b;
+  overscroll-behavior-y: none;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   background: var(--blue-gradient-team-background);
   overflow-x: hidden;
-}
-
-html {
-  overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 #root {
