@@ -184,7 +184,7 @@ function NewSection() {
                       {card.features.map((feature, index) => (
                         <div key={index} className="new-section-card-feature">
                           <div className="new-section-card-feature-dot"></div>
-                          <span className="new-section-card-feature-text text-style-caption">
+                          <span className="new-section-card-feature-text text-style-body-4">
                             {feature}
                           </span>
                         </div>
