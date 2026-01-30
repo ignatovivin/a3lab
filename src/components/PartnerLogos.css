@@ -244,6 +244,10 @@
   justify-content: center;
 }
 
+#features-title {
+  margin-bottom: 0;
+}
+
 .partner-features-title-block h4 {
   margin: 0;
   width: 100%;
@@ -857,10 +861,6 @@
     align-items: flex-start;
   }
 
-  #features-title {
-    margin-bottom: 0;
-  }
-
   .partner-features-title-block h4,
   .partner-features-title-block p {
     text-align: left;
@@ -1039,10 +1039,6 @@
     grid-column: span 1;
     gap: 16px;
     align-items: flex-start;
-  }
-
-  #features-title {
-    margin-bottom: 0;
   }
 
   .partner-features-title-block h4,
