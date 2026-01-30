@@ -861,6 +861,7 @@
     display: none;
   }
 
+  /* Мобильный 375–768px: ширина карточек 280px (320px только на экранах до 375px) */
   .partner-features-plan {
     flex: 0 0 auto;
     width: 280px;
@@ -1032,6 +1033,7 @@
     display: none;
   }
 
+  /* Мобильный до планшетного (до 768px): ширина карточек 320px только в partner-features-plans */
   .partner-features-plan {
     flex: 0 0 auto;
     width: 320px;
