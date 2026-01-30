@@ -27,18 +27,16 @@
 .steps-title-block {
   width: 100%;
   text-align: center;
+  color: var(--text-white);
 }
 
 .steps-title {
   margin: 0;
-  color: var(--light-blue-5);
+  color: var(--text-white);
 }
 
 .steps-title-gradient {
-  background: var(--blue-gradient-2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-white);
   display: inline-block;
 }
 
@@ -99,22 +97,33 @@
   justify-content: center;
 }
 
-.steps-control-circle {
+.steps-control-outer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--light-blue-100);
+  border: 1px solid var(--text-white);
+  background: none;
+  box-sizing: border-box;
+}
+
+.steps-control-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
   background-color: var(--text-white);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 1;
 }
 
 .steps-number {
-  color: var(--dark-blue-100);
+  color: var(--light-blue-100);
   text-align: center;
 }
 
@@ -133,6 +142,27 @@
 }
 
 /* Responsive styles */
+@media (min-width: 1920px) {
+  .steps {
+    padding-top: 100px;
+  }
+  
+  .steps-control-number {
+    width: 58px;
+    height: 58px;
+  }
+  
+  .steps-control-outer {
+    width: 72px;
+    height: 72px;
+  }
+  
+  .steps-control-circle {
+    width: 52px;
+    height: 52px;
+  }
+}
+
 @media (min-width: 1600px) and (max-width: 1919.98px) {
   .steps {
     padding: 120px 0;
@@ -230,8 +260,8 @@
   }
   
   .steps-control-circle {
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -289,8 +319,8 @@
   }
   
   .steps-control-circle {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
   }
   
   .steps-control-caption {
@@ -357,8 +387,8 @@
   }
   
   .steps-control-circle {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
   }
   
   .steps-control-caption {

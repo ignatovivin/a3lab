@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 100%;
   padding: 0;
-  background-color: var(--light-blue-5);
+  background-color: var(--text-white);
   position: relative;
   border-radius: 80px;
   overflow: hidden;
@@ -44,10 +44,7 @@
 }
 
 .faq-title-gradient {
-  background: var(--blue-gradient-2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--dark-blue-100);
   display: inline-block;
 }
 

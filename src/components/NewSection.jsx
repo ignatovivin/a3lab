@@ -163,7 +163,7 @@ function NewSection() {
                     onClick={() => setActiveTab(tab.id)}
                     aria-pressed={activeTab === tab.id}
                   >
-                    <span className="new-section-segmented-control-label">{tab.label}</span>
+                    <span className="new-section-segmented-control-label text-style-button">{tab.label}</span>
                   </button>
                 ))}
               </div>

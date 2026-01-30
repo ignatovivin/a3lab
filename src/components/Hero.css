@@ -43,6 +43,7 @@
 .hero-content h2,
 .hero-content p {
   margin: 0;
+  color: var(--text-white);
 }
 
 #hero-title {

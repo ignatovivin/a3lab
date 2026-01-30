@@ -20,14 +20,13 @@
 /* Prevent horizontal overflow from long words */
 p, h1, h2, h3, h4, h5, h6, span, a, li {
   overflow-wrap: break-word;
-  word-wrap: break-word;
   max-width: 100%;
 }
 
 
 html {
   overflow-x: hidden;
-  background-color: #070c2b;
+  background: var(--blue-gradient-team-background);
   overscroll-behavior-y: none;
 }
 

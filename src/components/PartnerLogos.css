@@ -239,7 +239,7 @@
   grid-column: 1 / -1;
   min-width: 0;
   gap: 36px;
-  color: var(--light-blue-5);
+  color: var(--text-white);
   align-items: center;
   justify-content: center;
 }
@@ -285,7 +285,7 @@
 }
 
 .partner-features-plan-highlighted {
-  border: 2px solid var(--light-blue-100);
+  border: 4px solid var(--light-blue-10);
 }
 
 .partner-features-plan-header {
@@ -311,7 +311,7 @@
 
 .partner-features-plan-name {
   margin: 0;
-  color: var(--dark-blue-90);
+  color: var(--dark-blue-100);
   word-break: break-word;
   overflow-wrap: break-word;
 }
@@ -335,7 +335,7 @@
 }
 
 .partner-features-plan-price {
-  color: var(--dark-blue-90);
+  color: var(--dark-blue-100);
 }
 
 .partner-features-plan-price-details {
@@ -344,7 +344,7 @@
 
 .partner-features-plan-description {
   margin: 0;
-  color: var(--dark-blue-90);
+  color: var(--dark-blue-100);
   width: 100%;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -356,6 +356,7 @@
   flex-direction: column;
   gap: 12px;
   width: 100%;
+  color: var(--dark-blue-100);
 }
 
 .partner-features-plan-feature {
@@ -372,11 +373,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--dark-blue-90);
+  color: var(--dark-blue-100);
 }
 
 .partner-features-plan-feature-text {
-  color: var(--dark-blue-90);
+  color: var(--dark-blue-100);
   word-break: break-word;
   overflow-wrap: break-word;
 }

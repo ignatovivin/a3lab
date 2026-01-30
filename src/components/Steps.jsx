@@ -26,6 +26,7 @@ function Steps() {
                 <div className="steps-control-frame">
                   <div className="steps-control-line" aria-hidden="true"></div>
                   <div className="steps-control-number" aria-label={`Шаг ${step.number}`}>
+                    <div className="steps-control-outer" aria-hidden="true"></div>
                     <div className="steps-control-circle">
                       <span className="text-style-title-1 steps-number" aria-hidden="true">{step.number}</span>
                     </div>
