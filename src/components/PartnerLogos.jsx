@@ -56,7 +56,7 @@ function PartnerLogos() {
                   <img src={icon1} alt="" className="partner-table-icon" aria-hidden="true" />
                   <h3 className="text-style-title-3">Подключаем к крупнейшим банкам</h3>
                 </header>
-                <p className="text-style-body-5">Один договор позволяет организовать оперативное подключение к приёму платежей организаций коммунальных услуг во всех топ-банках страны</p>
+                <p className="text-style-body-5">Один договор позволяет организовать оперативное подключение к приёму платежей организаций во всех топ-банках страны</p>
               </article>
               <div className="partner-table-space" aria-hidden="true"></div>
               <div className="partner-table-line" aria-hidden="true"></div>
