@@ -858,6 +858,10 @@
     text-align: left;
   }
 
+  .partner-features-title-block h4 {
+    font-size: 32px;
+  }
+
   .partner-features-plans {
     margin-top: 32px;
     display: flex;
@@ -1032,6 +1036,10 @@
   .partner-features-title-block h4,
   .partner-features-title-block p {
     text-align: left;
+  }
+
+  .partner-features-title-block h4 {
+    font-size: 32px;
   }
 
   .partner-features-plans {
