@@ -25,3 +25,7 @@ dist-ssr
 
 # Deploy script with credentials
 deploy.ps1
+
+# Test
+coverage
+.vitest
