@@ -312,17 +312,16 @@
   }
   
   .steps-control-line {
-    width: 2px;
+    width: 1px;
     height: 24px;
     flex: none;
     background-color: var(--text-white);
-    border-radius: 1px;
   }
   
   .steps-control-number {
     width: 40px;
     height: 40px;
-    margin-bottom: 0;
+    margin: 0;
   }
   
   .steps-control-outer {
@@ -387,17 +386,16 @@
   }
   
   .steps-control-line {
-    width: 2px;
+    width: 1px;
     height: 24px;
     flex: none;
     background-color: var(--text-white);
-    border-radius: 1px;
   }
   
   .steps-control-number {
     width: 40px;
     height: 40px;
-    margin-bottom: 0;
+    margin: 0;
   }
   
   .steps-control-outer {

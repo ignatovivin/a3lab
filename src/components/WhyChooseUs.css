@@ -127,7 +127,7 @@
 
 .why-choose-us-card-subtitle {
   margin: 0;
-  color: var(--text-black-60);
+  color: var(--text-black-80);
   word-break: break-word;
   overflow-wrap: break-word;
 }
@@ -319,6 +319,10 @@
     height: 64px;
   }
 
+  .why-choose-us-card-subtitle {
+    font-size: 14px;
+  }
+
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
@@ -368,6 +372,10 @@
   .why-choose-us-card-icon {
     width: 64px;
     height: 64px;
+  }
+
+  .why-choose-us-card-subtitle {
+    font-size: 14px;
   }
 
 }
@@ -420,6 +428,10 @@
   .why-choose-us-card-icon {
     width: 56px;
     height: 56px;
+  }
+
+  .why-choose-us-card-subtitle {
+    font-size: 14px;
   }
 
 }
