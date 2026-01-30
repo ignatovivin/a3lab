@@ -392,6 +392,16 @@
 }
 
 /* Responsive styles */
+@media (min-width: 1920px) {
+  .partner-features-plan-description {
+    font-size: 16px;
+  }
+
+  .partner-features-plan-feature-text {
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 1600px) and (max-width: 1919.98px) {
   .partner-wrapper {
     max-width: 100%;
