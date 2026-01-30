@@ -196,6 +196,9 @@
 .new-section-card-feature-text {
   color: var(--dark-blue-100);
   text-align: left;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Responsive styles */
@@ -334,6 +337,15 @@
     padding: 16px;
   }
   
+  .new-section-card-features {
+    gap: 8px;
+  }
+  
+  .new-section-card-feature-text {
+    min-width: 0;
+    word-break: break-word;
+  }
+  
   .new-section-controls {
     gap: 24px;
   }
@@ -389,6 +401,15 @@
   .new-section-card {
     grid-column: span 12;
     padding: 16px;
+  }
+  
+  .new-section-card-features {
+    gap: 8px;
+  }
+  
+  .new-section-card-feature-text {
+    min-width: 0;
+    word-break: break-word;
   }
   
   .new-section-controls {

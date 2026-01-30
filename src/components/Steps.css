@@ -303,13 +303,15 @@
     flex-direction: column;
     width: auto;
     gap: 0;
+    align-items: center;
   }
   
   .steps-control-line {
-    width: 1px;
-    height: 30px;
+    width: 2px;
+    height: 24px;
     flex: none;
     background-color: var(--light-blue-100);
+    border-radius: 1px;
   }
   
   .steps-control-number {
@@ -318,9 +320,14 @@
     margin-bottom: 0;
   }
   
+  .steps-control-outer {
+    width: 40px;
+    height: 40px;
+  }
+  
   .steps-control-circle {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
   }
   
   .steps-control-caption {
@@ -371,13 +378,15 @@
     flex-direction: column;
     width: auto;
     gap: 0;
+    align-items: center;
   }
   
   .steps-control-line {
-    width: 1px;
-    height: 30px;
+    width: 2px;
+    height: 24px;
     flex: none;
     background-color: var(--light-blue-100);
+    border-radius: 1px;
   }
   
   .steps-control-number {
@@ -386,9 +395,14 @@
     margin-bottom: 0;
   }
   
+  .steps-control-outer {
+    width: 40px;
+    height: 40px;
+  }
+  
   .steps-control-circle {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
   }
   
   .steps-control-caption {

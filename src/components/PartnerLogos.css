@@ -1034,8 +1034,8 @@
 
   .partner-features-plan {
     flex: 0 0 auto;
-    width: 260px;
-    min-width: 260px;
+    width: 320px;
+    min-width: 320px;
     padding: 16px;
     gap: 20px;
     scroll-snap-align: start;
