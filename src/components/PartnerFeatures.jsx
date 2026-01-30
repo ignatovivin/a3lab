@@ -65,7 +65,7 @@ function PartnerFeatures() {
         <div className="partner-features-content">
           <header className="partner-features-header">
             <div className="partner-features-title-block">
-              <h4 id="features-title" className="text-style-h-3">Выберите свой план</h4>
+              <h2 id="features-title" className="text-style-h-3">Выберите свой план</h2>
               <p className="text-style-body-3">
                 Прозрачные тарифы без скрытых комиссий.<br />
                 Первый месяц бесплатно для всех новых клиентов

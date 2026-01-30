@@ -54,7 +54,7 @@ function PartnerLogos() {
               <article className="partner-table-content">
                 <header className="partner-table-header">
                   <img src={icon1} alt="" className="partner-table-icon" aria-hidden="true" />
-                  <h3 className="text-style-title-3">Подключаем к крупнейшим банкам</h3>
+                  <h3 className="text-style-title-3">Подключаем к крупнейшим<br />банкам</h3>
                 </header>
                 <p className="text-style-body-5">Один договор позволяет организовать оперативное подключение к приёму платежей организаций во всех топ-банках страны</p>
               </article>
@@ -67,7 +67,7 @@ function PartnerLogos() {
               <article className="partner-table-content">
                 <header className="partner-table-header">
                   <img src={icon2} alt="" className="partner-table-icon" aria-hidden="true" />
-                  <h3 className="text-style-title-3">Формируем единый реестр платежей</h3>
+                  <h3 className="text-style-title-3">Формируем единый реестр<br />платежей</h3>
                 </header>
                 <p className="text-style-body-5">Платежи от всех банков собираем в одном платёжном поручении, что экономит трудозатраты на обработку всех входящих платежей в десятки раз</p>
               </article>
@@ -80,7 +80,7 @@ function PartnerLogos() {
               <article className="partner-table-content">
                 <header className="partner-table-header">
                   <img src={icon3} alt="" className="partner-table-icon" aria-hidden="true" />
-                  <h3 className="text-style-title-3">Реализуем готовое платёжное решение</h3>
+                  <h3 className="text-style-title-3">Реализуем готовое платёжное<br />решение</h3>
                 </header>
                 <p className="text-style-body-5">Заменяет эквайринг при онлайн-оплате и даёт больше возможностей для роста дохода</p>
               </article>
@@ -93,7 +93,7 @@ function PartnerLogos() {
               <article className="partner-table-content">
                 <header className="partner-table-header">
                   <img src={icon4} alt="" className="partner-table-icon" aria-hidden="true" />
-                  <h3 className="text-style-title-3">Отображаем всю историю платежей</h3>
+                  <h3 className="text-style-title-3">Отображаем всю историю<br />платежей</h3>
                 </header>
                 <p className="text-style-body-5">В личном кабинете отображаются все транзакции, принятые через Платежный сервис А3, каналы оплаты, информация о пользователе и прочие данные, которые указывает пользователь при платеже</p>
               </article>

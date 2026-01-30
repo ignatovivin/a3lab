@@ -216,6 +216,10 @@
   .new-section-card {
     grid-column: span 4;
   }
+  
+  .new-section-card-title {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 1600px) and (max-width: 1919.98px) {

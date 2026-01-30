@@ -66,6 +66,10 @@
   animation: slideDown 0.3s ease;
 }
 
+.accordion-content[hidden] {
+  display: none;
+}
+
 .accordion-text {
   color: var(--text-black-80);
   margin: 0;
@@ -86,6 +90,12 @@
 }
 
 /* Responsive styles */
+@media (min-width: 1920px) {
+  .accordion-title {
+    font-size: 28px;
+  }
+}
+
 @media (min-width: 1280px) and (max-width: 1599.98px) {
   .accordion {
     border-radius: 24px;

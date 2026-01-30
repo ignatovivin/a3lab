@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className="footer" role="contentinfo">
+    <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo-menu">
           <div className="footer-logo-title">
@@ -16,9 +16,9 @@ function Footer() {
             <div className="footer-menu-column">
               <span className="footer-menu-title text-style-caption">Компания</span>
               <div className="footer-menu-items">
-                <a href="#" className="footer-menu-item text-style-body-5">Работа у нас</a>
-                <a href="#" className="footer-menu-item text-style-body-5">Документы</a>
-                <a href="#" className="footer-menu-item text-style-body-5">Контакты</a>
+                <a href="/" className="footer-menu-item text-style-body-5">Работа у нас</a>
+                <a href="/" className="footer-menu-item text-style-body-5">Документы</a>
+                <a href="/#contact-form" className="footer-menu-item text-style-body-5">Контакты</a>
               </div>
             </div>
           </nav>

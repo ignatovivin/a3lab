@@ -134,6 +134,10 @@
 
 /* Responsive styles */
 @media (min-width: 1920px) {
+  .why-choose-us-card-title {
+    font-size: 28px;
+  }
+
   .why-choose-us-card-subtitle {
     font-size: 16px;
   }

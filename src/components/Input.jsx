@@ -1,5 +1,5 @@
 import './Input.css'
-import { useState } from 'react'
+import { useState, useId } from 'react'
 
 function Input({
   label,
@@ -11,11 +11,14 @@ function Input({
   errorMessage = '',
   disabled = false,
   className = '',
+  id: idProp,
   onChange,
   onFocus,
   onBlur,
   ...props
 }) {
+  const generatedId = useId()
+  const inputId = idProp || `input-${generatedId.replace(/:/g, '')}`
   const [isFocused, setIsFocused] = useState(false)
   const hasValue = !!value
   const isFloating = hasValue || isFocused
@@ -48,15 +51,16 @@ function Input({
     <div className={inputClasses}>
       <div className="input-wrapper">
         {label && (
-          <span className={`input-label-inside ${isFloating ? 'floating' : ''}`}>
+          <label htmlFor={inputId} className={`input-label-inside ${isFloating ? 'floating' : ''}`}>
             {isFloating ? (
               <span className="text-style-caption">{label}</span>
             ) : (
               <span className="text-style-body-4">{label}</span>
             )}
-          </span>
+          </label>
         )}
         <input
+          id={inputId}
           type={type}
           value={value}
           placeholder={placeholder}
@@ -67,11 +71,12 @@ function Input({
           className="input-field text-style-body-4"
           aria-invalid={error}
           aria-disabled={disabled}
+          aria-describedby={error && errorMessage ? `${inputId}-error` : undefined}
           {...props}
         />
       </div>
       {error && errorMessage && (
-        <span className="input-error-message text-style-caption" role="alert">
+        <span id={`${inputId}-error`} className="input-error-message text-style-caption" role="alert">
           {errorMessage}
         </span>
       )}

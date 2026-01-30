@@ -37,7 +37,7 @@ function WhyChooseUs() {
       <div className="why-choose-us-content">
         <header className="why-choose-us-header">
           <div className="why-choose-us-title-block">
-            <h3 id="why-choose-us-title" className="why-choose-us-title">Почему нас выбирают</h3>
+            <h2 id="why-choose-us-title" className="why-choose-us-title">Почему нас выбирают</h2>
             <p className="why-choose-us-description text-style-body-3">
               Мы объединили лучшее от финтеха и SaaS инструментов,<br />
               чтобы создать подходящий продукт для вашего бизнеса
@@ -51,7 +51,7 @@ function WhyChooseUs() {
                 <img src={feature.icon} alt="" width="90" height="90" />
               </div>
               <div className="why-choose-us-card-content">
-                <h4 className="why-choose-us-card-title text-style-title-2">{feature.title}</h4>
+                <h3 className="why-choose-us-card-title text-style-title-2">{feature.title}</h3>
                 <p className="why-choose-us-card-subtitle text-style-caption">{feature.subtitle}</p>
               </div>
             </article>

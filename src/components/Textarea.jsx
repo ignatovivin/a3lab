@@ -1,5 +1,5 @@
 import './Textarea.css'
-import { useState } from 'react'
+import { useState, useId } from 'react'
 
 function Textarea({
   label,
@@ -10,11 +10,14 @@ function Textarea({
   errorMessage = '',
   disabled = false,
   className = '',
+  id: idProp,
   onChange,
   onFocus,
   onBlur,
   ...props
 }) {
+  const generatedId = useId()
+  const textareaId = idProp || `textarea-${generatedId.replace(/:/g, '')}`
   const [isFocused, setIsFocused] = useState(false)
   const hasValue = !!value
   const isFloating = hasValue || isFocused
@@ -46,15 +49,16 @@ function Textarea({
     <div className={textareaClasses}>
       <div className="textarea-wrapper">
         {label && (
-          <span className={`textarea-label-inside ${isFloating ? 'floating' : ''}`}>
+          <label htmlFor={textareaId} className={`textarea-label-inside ${isFloating ? 'floating' : ''}`}>
             {isFloating ? (
               <span className="text-style-caption">{label}</span>
             ) : (
               <span className="text-style-body-4">{label}</span>
             )}
-          </span>
+          </label>
         )}
         <textarea
+          id={textareaId}
           value={value}
           placeholder={placeholder}
           rows={rows}
@@ -65,11 +69,12 @@ function Textarea({
           className="textarea-field text-style-body-4"
           aria-invalid={error}
           aria-disabled={disabled}
+          aria-describedby={error && errorMessage ? `${textareaId}-error` : undefined}
           {...props}
         />
       </div>
       {error && errorMessage && (
-        <span className="textarea-error-message text-style-caption" role="alert">
+        <span id={`${textareaId}-error`} className="textarea-error-message text-style-caption" role="alert">
           {errorMessage}
         </span>
       )}

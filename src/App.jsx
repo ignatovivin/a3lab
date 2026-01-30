@@ -139,7 +139,7 @@ function App() {
         Перейти к основному содержимому
       </a>
       <Header />
-      <main role="main" id="main-content">
+      <main id="main-content">
         <Hero />
         <PartnerLogos />
         <NewSection />

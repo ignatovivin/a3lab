@@ -44,7 +44,7 @@ function Accordion({
 
   return (
     <div className={accordionClasses}>
-      <h3 className="accordion-heading">
+      <div className="accordion-heading">
         <button
           type="button"
           id={`${accordionId}-header`}
@@ -58,19 +58,18 @@ function Accordion({
             {isOpen ? <MinusIcon /> : <PlusIcon />}
           </span>
         </button>
-      </h3>
-      {isOpen && (
-        <div
-          id={`${accordionId}-content`}
-          className="accordion-content"
-          role="region"
-          aria-labelledby={`${accordionId}-header`}
-        >
-          <div className="accordion-text text-style-body-4">
-            {children}
-          </div>
+      </div>
+      <div
+        id={`${accordionId}-content`}
+        className="accordion-content"
+        role="region"
+        aria-labelledby={`${accordionId}-header`}
+        hidden={!isOpen}
+      >
+        <div className="accordion-text text-style-body-4">
+          {children}
         </div>
-      )}
+      </div>
     </div>
   )
 }
